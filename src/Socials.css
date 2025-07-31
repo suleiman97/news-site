@@ -1,0 +1,37 @@
+/* src/pages/Socials.css */
+
+.socials-container {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.socials-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.socials-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials-buttons button:hover {
+  background-color: #ddd;
+}
+
+.socials-buttons img {
+  width: 24px;
+  height: 24px;
+}

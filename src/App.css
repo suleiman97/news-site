@@ -118,7 +118,7 @@ body {
   border: none;
   font-size: 28px;
   cursor: pointer;
-  color: #333;
+  color: black !important;
 }
 
 .sidebar-menu {
