@@ -8,15 +8,9 @@ const Beliefs = () => {
       <div className="episode-list">
         <div className="episode">
           <h3>الحلقة 1</h3>
-          <iframe
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-            title="الحلقة 1"
-            width="100%"
-            height="315"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
+         <video width="100%" height="315" controls> 
+         <source src="/videos/c:\Users\Translater\OneDrive\Desktop\Translated DStudioThe 28 Fundamental Beliefs with Ted Wilson\1.28 Fundamental Beliefs [Their Origin and Development]—Pastor Ted Wilson.mp4" type="video/mp4"/>
+         </video>
         </div>
       </div>
     </div>
