@@ -1,0 +1,38 @@
+.health-page {
+  padding: 40px 20px;
+  direction: rtl;
+  text-align: center;
+  background-color: #eafaf1;
+}
+
+.health-page h2 {
+  color: #27ae60;
+}
+
+.health-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.health-item {
+  background-color: #d4efdf;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 400px;
+  width: 100%;
+}
+
+.health-item h3 {
+  color: #27ae60;
+}
+
+.health-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}

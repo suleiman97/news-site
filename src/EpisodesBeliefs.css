@@ -1,0 +1,36 @@
+.beliefs-page {
+  padding: 40px 20px;
+  direction: rtl;
+  text-align: center;
+  background-color: #fffbea;
+}
+
+.beliefs-page h2 {
+  color: #d35400;
+}
+
+.beliefs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.beliefs-item {
+  background-color: #fff3cd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.beliefs-item h3 {
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+.beliefs-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}

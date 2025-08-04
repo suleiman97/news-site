@@ -213,5 +213,37 @@ body {
 .social-icons img:hover {
   transform: scale(1.2);
 }
+.submenu {
+  position: relative;
+  text-align: right;
+}
+
+.submenu-title {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+  display: block;
+}
+
+.submenu-items {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+.submenu-items a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.submenu-items a:hover {
+  color: #e74c3c;
+}
 
 

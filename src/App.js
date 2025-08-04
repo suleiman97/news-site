@@ -1,9 +1,12 @@
-// 📁 App.js
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import About from './About';
 import Socials from './Socials';
+import Episodes from './Episodes';
+import Beliefs from './EpisodesBeliefs';
+import Hope from './EpisodesHope';
+import Health from './EpisodesHealth';
 
 function ScrollToPrayer() {
   const location = useLocation();
@@ -30,8 +33,7 @@ function Home() {
         ></iframe>
       </div>
 
-      <p className="description">تابع آخر الأحداث المباشرة لحظة بلحظة من قناتنا!
-      </p>
+      <p className="description">تابع آخر الأحداث المباشرة لحظة بلحظة من قناتنا!</p>
 
       <div className="prayer-request" id="prayer">
         <h2 className="form-title">قدم طلبك للصلاة من أجلك</h2>
@@ -73,6 +75,14 @@ function App() {
               <Link to="/about" onClick={() => setMenuOpen(false)}>👥 من نحن</Link>
               <Link to="/#prayer" onClick={() => setMenuOpen(false)}>🙏 قدم طلبك</Link>
               <Link to="/socials" onClick={() => setMenuOpen(false)}>📱 تابعنا</Link>
+              <div className="submenu">
+                <span className="submenu-title">🎬 الحلقات ▾</span>
+                <div className="submenu-items">
+                  <Link to="/episodes/beliefs" onClick={() => setMenuOpen(false)}>المعتقدات الأساسية مع تيد ويلسون</Link>
+                  <Link to="/episodes/hope" onClick={() => setMenuOpen(false)}>برنامج الحياة والأمل</Link>
+                  <Link to="/episodes/health" onClick={() => setMenuOpen(false)}>برنامج الصحة</Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,6 +92,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/socials" element={<Socials />} />
+          <Route path="/episodes" element={<Episodes />} />
+          <Route path="/episodes/beliefs" element={<Beliefs />} />
+          <Route path="/episodes/hope" element={<Hope />} />
+          <Route path="/episodes/health" element={<Health />} />
         </Routes>
 
         {/* Footer */}

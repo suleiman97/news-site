@@ -1,0 +1,41 @@
+.hope-page {
+  padding: 40px 20px;
+  direction: rtl;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.hope-page h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.hope-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hope-item {
+  background-color: #d6eaf8;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+.hope-item h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.hope-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
